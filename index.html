@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Pixelify+Sans&family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Pixelify+Sans&family=Playfair+Display:ital,wght@1,500&family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/logo_merch.jpg" type="image/gif" />
+
+    <title>Flixo Merch</title>
+
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="assets/logo2.jpg" alt="Flixo Merch Logo">
+          </div>
+          <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="javascript:void(0);" class="cta-button" onclick="openContactMenu()">Contact</a>
+
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="contact-pop-up-menu" class="contact-pop-up-menu">
+      <div class="contact-menu-content">
+        <span class="close-button" onclick="closeContactMenu()">&times;</span>
+        <p style="color: white;">Contact Me Here:</p>
+        <ul class="contact-menu">
+          <li><a href="#" class="contact-button discord"><i class="fab fa-discord"></i> Discord</a></li>
+          <li><a href="#" class="contact-button whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+          <li><a href="#" class="contact-button instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#" class="contact-button facebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="#" class="contact-button helpline"><i class="fas fa-phone"></i> Helpline</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-slider">
+        <div class="hero-slide">
+          <img src="assets/1.png" alt="Banner 1">
+        </div>
+        <div class="hero-slide">
+          <img src="assets/2.png" alt="Banner 2">
+        </div>
+        <div class="hero-slide">
+          <img src="assets/3.png"Banner 3">
+        </div>
+      </div>
+      <div class="hero-content">
+        <div class="dark-mode-toggle">
+          <label class="switch">
+            <input type="checkbox" id="mode-toggle-checkbox">
+            <span class="slider round"></span>
+          </label>
+          <span class="mode-label"></span>
+        </div>
+        <a href="#products1" class="cta-button1">Shop Now</a>
+      </div>
+    </section>
+    
+
+    <!-- Divisions -->
+    <section class="divisions" id="keychains">
+      <div class="container">
+        <div class="product-division">
+          <h2>Keychains & Chains</h2>
+          <div class="product-cards" >
+            <!-- Product Card 1 -->
+            <div class="product-card" id="first">
+              <img src="assets/keychain.jpg" alt="Marvel theme Keychain" width="215" height="200">
+              <h3>Marvel theme Keychain</h3>
+              <p class="price">$14.99</p>
+              <a href="javascript:void(0);" class="cta-button" onclick="openPopUpMenu('Marvel theme Keychain', 'Add a touch of Marvel to your keys with this keychain.', '$14.99', 'assets/keychain.jpg')">View Details</a>
+            </div>
+    
+            <!-- Product Card 2 -->
+            <div class="product-card" id="products1">
+              <img src="assets/keychain2.jpg" alt="Football teams Keychains" width="215" height="200">
+              <h3>Football teams Keychains</h3>
+              <p class="price">$14.99</p>
+              <a href="javascript:void(0);" class="cta-button" onclick="openPopUpMenu('Football teams Keychains', 'Support your favorite football teams with these keychains.', '$14.99', 'assets/keychain2.jpg')">View Details</a>
+            </div>
+    
+            <!-- Product Card 3 -->
+            <div class="product-card">
+              <img src="assets/necklace3.jpg" alt="Women's Fancy Necklace" width="215" height="200">
+              <h3>Women's Fancy Necklace</h3>
+              <p class="price">$11.99</p>
+              <a href="javascript:void(0);" class="cta-button" onclick="openPopUpMenu('Women\'s Fancy Necklace', 'Elevate your style with this elegant women\'s necklace.', '$11.99', 'assets/necklace3.jpg')">View Details</a>
+            </div>
+    
+            <!-- Product Card 4 -->
+            <div class="product-card">
+              <img src="assets/necklace.jpg" alt="Fashion Frill Golden Chain" width="215" height="200">
+              <h3>Fashion Frill Golden Chain</h3>
+              <p class="price">$8.99</p>
+              <a href="javascript:void(0);" class="cta-button" onclick="openPopUpMenu('Fashion Frill Golden Chain', 'Enhance your fashion with this stylish golden chain.', '$8.99', 'assets/necklace.jpg')">View Details</a>
+            </div>
+    
+            <!-- Product Card 5 -->
+            <div class="product-card" id="first" id="second">
+              <img src="assets/necklace2.jpg" alt="Cute Pendents" width="215" >
+              <h3>Cute Pendents</h3>
+              <p class="price">$16.99</p>
+              <a href="javascript:void(0);" class="cta-button" onclick="openPopUpMenu('Cute Pendents', 'Adorn your neckline with these cute and colorful pendants.', '$16.99', 'assets/necklace2.jpg')">View Details</a>
+            </div>
+    
+            <!-- Product Card 6 -->
+            <div class="product-card" id="Necklace">
+              <img src="assets/necklace5.jpg" alt="Feminine Necklace" width="215" height="200">
+              <h3>Feminine Necklace</h3>
+              <p class="price">$19.99</p>
+              <a href="javascript:void(0);" class="cta-button" onclick="openPopUpMenu('Feminine Necklace', 'Express your femininity with this elegant necklace.', '$19.99', 'assets/necklace5.jpg')">View Details</a>
+            </div>
+    
+            <!-- Product Card 7 -->
+            <div class="product-card" style="margin-left: 10px;" id="pandents2">
+              <img src="assets/necklace4.jpg" alt="Colourful Pendants" width="215" height="200">
+              <h3>Colourful Pendants</h3>
+              <p class="price">$19.99</p>
+              <a href="javascript:void(0);" class="cta-button" onclick="openPopUpMenu('Colourful Pendants', 'Brighten up your look with these vibrant and colorful pendants.', '$19.99', 'assets/necklace4.jpg')">View Details</a>
+            </div>
+    
+            <!-- Product Card 8 -->
+            <div class="product-card" id="Bracelet">
+              <img src="assets/necklace6.jpg" alt="7 Chakras Bracelet" width="215" height="200">
+              <h3>7 Chakras Bracelet</h3>
+              <p class="price">$15.99</p>
+              <a href="javascript:void(0);" class="cta-button" onclick="openPopUpMenu('7 Chakras Bracelet', 'Balance your chakras with this meaningful 7 Chakras Bracelet.', '$15.99', 'assets/necklace6.jpg')">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+          
+    <!--Pop-Up Menu -->
+    <div id="pop-up-menu" class="pop-up-menu">
+      <div class="menu-content">
+        <div class="product-details">
+          <img id="popup-productImage" alt="Product Image" width="250" height="200">
+          <div class="product-info">
+            <h3 id="popup-productName"></h3>
+            <p id="popup-productPrice"></p>
+            <p id="popup-productDescription"></p>
+          </div>
+        </div>
+        <div class="contact-section">
+          <p>Wanna buy it? Contact me on:</p>
+          <div class="contact-buttons">
+            <a href="#" class="contact-button discord"><i class="fab fa-discord"></i> Discord</a>
+            <a href="#" class="contact-button whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="#" class="contact-button instagram"><i class="fab fa-instagram"></i> Instagram</a>
+          </div>
+        </div>
+        <span class="close-button" onclick="closePopUpMenu()">&times;</span>
+      </div>
+    </div>
+
+    <div class="product-division2">
+      <h2>Clothing & Apparel</h2>
+      <div class="product-cards">
+        <!-- Product Card 1 -->
+        <div class="product-card" id="first">
+          <img src="assets/animeshirt.jpg" alt="Anime T-Shirts" width="215" height="200">
+          <h3>Anime T-Shirts</h3>
+          <p class="price">₹899</p>
+          <a href="javascript:void(0);" class="cta-button" onclick="openPopUpMenu('Anime T-Shirts', 'Express your love for anime in style.', '$15.99', 'assets/animeshirt.jpg')">View Details</a>
+        </div>
+    
+        <!-- Product Card 2 -->
+        <div class="product-card">
+          <img src="assets/animeshirt2.jpg" alt="Printed RoundNeck T-Shirt" width="215" height="200">
+          <h3>Printed RoundNeck T-Shirt</h3>
+          <p class="price">₹899</p>
+          <a href="javascript:void(0);" class="cta-button" onclick="openPopUpMenu('Printed RoundNeck T-Shirt', 'Elevate your fashion with these stylish printed t-shirts.', '$15.99', 'assets/animeshirt2.jpg')">View Details</a>
+        </div>
+    
+        <!-- Product Card 3 -->
+        <div class="product-card">
+          <img src="assets/animeshirt3.jpg" alt="Aesthetic T-Shirts" width="215" height="200">
+          <h3>Aesthetic T-Shirts</h3>
+          <p class="price">₹899</p>
+          <a href="javascript:void(0);" class="cta-button" onclick="openPopUpMenu('Aesthetic T-Shirts', 'Discover your unique aesthetic with these stylish t-shirts.', '$15.99', 'assets/animeshirt3.jpg')">View Details</a>
+        </div>
+    
+        <!-- Product Card 4 -->
+        <div class="product-card">
+          <img src="assets/animeshirt4.jpg" alt="Men's Black Summer T-Shirt" width="215" height="200">
+          <h3>Men's Black Summer T-Shirt</h3>
+          <p class="price">₹899</p>
+          <a href="javascript:void(0);" class="cta-button" onclick="openPopUpMenu('Men\'s Black Summer T-Shirt', 'Stay cool and stylish this summer with black t-shirts.', '$15.99', 'assets/animeshirt4.jpg')">View Details</a>
+        </div>
+    
+        <!-- Add more product cards for the "Clothing & Apparel" section -->
+      </div>
+    </div>
+    </section>
+    
+    <div id="pop-up-menu" class="pop-up-menu">
+      <div class="menu-content">
+        <div class="product-details">
+          <img id="popup-productImage" alt="Product Image" width="250" height="200">
+          <div class="product-info">
+            <h3 id="popup-productName"></h3>
+            <p id="popup-productPrice"></p>
+            <p id="popup-productDescription"></p>
+          </div>
+        <span class="close-button" onclick="closePopUpMenu()">&times;</span>
+      </div>
+    </div>
+    </div>
+    
+
+  <footer class="footer">
+    <div class="container">
+      <div class="logo2">
+        <img src="assets/logo2.jpg" alt="Flixo Merch ecommerce templatemo">
+      </div>
+      <div class="contact-info">
+        <p>address</p>
+        <p>Flixo Merch@gmail.com</p>
+        <p>0000000000</p>
+      </div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-discord"></i></a>
+        <a href="https://www.instagram.com/flixomerch/"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <p class="copyright">Developer: <a href="https://xlsize0bruh.in/">@XLsize_bruh</a> & <a href="https://instagram.com/lts_tanmay_?igshid=NGVhN2U2NjQ0Yg%3D%3D">@Its_tanmay_</a></p>
+    <p class="copyright">Copyright © 2023 FlixoMerch Co., Ltd. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+   
+function openPopUpMenu(name, description, price, image) {
+    const popupProductName = document.getElementById("popup-productName");
+    const popupProductDescription = document.getElementById("popup-productDescription");
+    const popupProductPrice = document.getElementById("popup-productPrice");
+    const popupProductImage = document.getElementById("popup-productImage");
+
+    popupProductName.textContent = name;
+    popupProductDescription.textContent = "Description: " + description;
+    popupProductPrice.textContent = "Price: " + price;
+    popupProductImage.src = image;
+
+    const popUpMenu = document.getElementById("pop-up-menu");
+    popUpMenu.style.display = "block";
+
+    const background = document.createElement("div");
+    background.classList.add("popup-background");
+    document.body.appendChild(background);
+
+    // Add a class to the body element to hide scrolling
+    document.body.classList.add('popup-open');
+}
+
+
+function closePopUpMenu() {
+    const popUpMenu = document.getElementById("pop-up-menu");
+    popUpMenu.style.display = "none";
+
+    // Remove the semi-transparent background element
+    const background = document.querySelector(".popup-background");
+    if (background) {
+        background.remove();
+    }
+
+
+    document.body.classList.remove('popup-open');
+}
+function openContactMenu() {
+  var contactMenu = document.getElementById('contact-pop-up-menu');
+  contactMenu.style.display = 'block';
+}
+
+function closeContactMenu() {
+  var contactMenu = document.getElementById('contact-pop-up-menu');
+  contactMenu.style.display = 'none';
+}
+
+
+function setMode(mode) {
+  if (mode === 'dark') {
+    document.body.classList.add('dark-mode');
+    document.body.classList.remove('light-mode');
+  } else {
+    document.body.classList.add('light-mode');
+    document.body.classList.remove('dark-mode');
+  }
+  localStorage.setItem('mode', mode);
+}
+
+
+function toggleMode() {
+        const currentMode = localStorage.getItem('mode') || 'light';
+        const newMode = currentMode === 'light' ? 'dark' : 'light';
+        setMode(newMode);
+      }
+
+
+      const modeToggleCheckbox = document.getElementById('mode-toggle-checkbox');
+      modeToggleCheckbox.addEventListener('change', function () {
+        toggleMode();
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".hero-slide");
+  let currentSlide = 0;
+
+  function showSlide(slideIndex) {
+    slides[currentSlide].style.display = "none";
+    slides[slideIndex].style.display = "block";
+    currentSlide = slideIndex;
+  }
+
+  function nextSlide() {
+    const nextIndex = (currentSlide + 1) % slides.length;
+    showSlide(nextIndex);
+  }
+
+  
+  setInterval(nextSlide, 4000); // 4 seconds
+
+  
+  showSlide(currentSlide);
+});
+
+</script>
+</body>
+</html>
