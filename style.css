@@ -693,10 +693,10 @@ body.dark-mode .product-card {
 
 
 
-@media (max-width: 728px) {
+@media (max-width: 700px) {
 
   .hero {
-    background-image: url();
+    background-image: none;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -711,7 +711,7 @@ body.dark-mode .product-card {
     color: white;
     border-bottom: 3px solid #f3c612;
     padding: 10px 0;
-    width: 360px
+    width: 390px
    }
 
   .dark-mode .header{
@@ -754,10 +754,17 @@ body.dark-mode .product-card {
   
   .nav-menu a {
     text-decoration: none;
-    color: white;
+    color: #111111;
     font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
     margin-right: 40px;
     transition: color 0.3s;
+  }
+
+  .dark-mode .nav-menu a{
+    color: #eee;
+    background-color:#222;
   }
   /* Light mode styles */
   body .light-mode {
@@ -773,7 +780,14 @@ body.dark-mode .product-card {
   
   .nav-menu a:hover {
     color: #f3c612;
+   
   }
+
+  .dark-mode .nav-menu a:hover{
+    background-color: #222;
+  }
+
+
   /* Style for the contact menu */
   #contact-pop-up-menu {
     display: none;
@@ -972,6 +986,8 @@ body.dark-mode .product-card {
   
   
   .hero {
+    background-image: url();
+
       background-size: contain;
       background-position: center;
       color: white;
@@ -994,9 +1010,10 @@ body.dark-mode .product-card {
   }
   
   .hero-slide img {
+    
     width: 100%;
     height: auto;
-    height: 580px;
+    height: 300px;  
     
   }
   
@@ -1029,17 +1046,23 @@ body.dark-mode .product-card {
   .cta-button1 {
     display: inline-block;
     position: absolute;
-    top: 49%;
+    top: 65%;
     left: 35%;
-    background-color: #f39c12;
-    color: white;
-    padding: 10px 20px;
+    background-color: #252525;
+    color: #eee;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 8px 20px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 4px;
     transition: background-color 0.3s;
     border-radius: 20px;
-   
+    
+  }
+
+  .dark-mode .cta-button1{
+    background-color: #111111;
   }
   
   .cta-button1:hover {
@@ -1050,7 +1073,7 @@ body.dark-mode .product-card {
   .divisions {
     background-color: #eee;
     padding:40px 0;
-    margin-top: 100px;
+    margin-top:-120px;
     
   }
   
